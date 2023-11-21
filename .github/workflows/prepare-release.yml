@@ -60,14 +60,14 @@ jobs:
 
       - name: Switch to the release branch
         run: |
-          BRANCH_NAME="release/release-v${{ env.NEW_VERSION }}"
+          BRANCH_NAME="release/v${{ env.NEW_VERSION }}"
           echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
           git switch -c "$BRANCH_NAME"
 
       - name: Roll changelog, bump version, and push branch
         run: |
           # see https://opensource.axo.dev/cargo-dist/book/workspaces/cargo-release-guide.html#using-cargo-release-with-pull-requests
-          cargo release "${{ inputs.level }}" --execute --no-confirm --push --no-publish --no-tag --allow-branch="${{ env.BRANCH_NAME }}"
+          cargo release "${{ inputs.level }}" --execute --no-confirm --config prepare-release.toml
 
       - name: Open the release PR
         env:
