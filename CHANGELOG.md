@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] - ReleaseDate
 
+## [0.1.1] - 2023-11-21
+
 - Added `dfx` mode, which selects a dfx version and dispatches execution to it.
 - Added `dfxvm install` command, which installs a dfx version.
 - Added `dfxvm default` command, which sets or displays the default dfx version.
@@ -17,4 +19,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `dfxvm list` command, which lists all installed dfx versions.
 
 <!-- next-url -->
-[Unreleased]: https://github.com/dfinity/dfxvm/compare/828e4ed...HEAD
+[Unreleased]: https://github.com/dfinity/dfxvm/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/dfinity/dfxvm/compare/828e4ed...v0.1.1
