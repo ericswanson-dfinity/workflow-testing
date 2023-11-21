@@ -33,6 +33,7 @@ unix-archive = ".tar.gz"
 # Config for 'cargo release'
 [workspace.metadata.release]
 publish = false # don't publish to crates.io
+push = false # don't push to git
 pre-release-replacements = [
     {file="CHANGELOG.md", search="Unreleased", replace="{{version}}"},
     {file="CHANGELOG.md", search="\\.\\.\\.HEAD", replace="...v{{version}}", exactly=1},
