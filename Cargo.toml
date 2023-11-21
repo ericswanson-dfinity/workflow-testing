@@ -32,8 +32,8 @@ unix-archive = ".tar.gz"
 [workspace.metadata.release]
 pre-release-replacements = [
     {file="CHANGELOG.md", search="Unreleased", replace="{{version}}"},
-    {file="CHANGELOG.md", search="\\.\\.\\.HEAD", replace="...{{version}}", exactly=1},
+    {file="CHANGELOG.md", search="\\.\\.\\.HEAD", replace="...v{{version}}", exactly=1},
     {file="CHANGELOG.md", search="ReleaseDate", replace="{{date}}"},
     {file="CHANGELOG.md", search="<!-- next-header -->", replace="<!-- next-header -->\n\n## [Unreleased] - ReleaseDate", exactly=1},
-    {file="CHANGELOG.md", search="<!-- next-url -->", replace="<!-- next-url -->\n[Unreleased]: https://github.com/dfinity/dfxvm/compare/{{version}}...HEAD", exactly=1},
+    {file="CHANGELOG.md", search="<!-- next-url -->", replace="<!-- next-url -->\n[Unreleased]: https://github.com/dfinity/dfxvm/compare/v{{version}}...HEAD", exactly=1},
 ]
