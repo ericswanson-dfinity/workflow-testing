@@ -78,12 +78,12 @@ jobs:
           
           After merging, run the following:
 
-          ```bash
+          \`\`\`bash
           git checkout main
           git pull
           cargo dist plan
           cargo release --execute
-          ```
+          \`\`\`
           EOF
 
           cat BODY.md
